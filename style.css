@@ -19,6 +19,10 @@ body {
     color: var(--clr-text-400);
     letter-spacing: .017em;
 }
+button:hover,
+.main_product-item:hover {
+    cursor: pointer;
+}
 header,
 .hero {
     background: #eee;
@@ -55,7 +59,6 @@ header .quote {
 .quote:hover {
     background: var(--clr-text-400);
     color: var(--clr-text-600);
-    cursor: pointer;
 }
 .hero {
     display: flex;
@@ -114,7 +117,6 @@ main {
 }
 .main_product-item:hover {
     scale: 1.2;
-    cursor: pointer;
 }
 .main_product-item img {
     height: 5rem;
@@ -155,6 +157,10 @@ main {
     border-radius: 3px;
     margin-top: 2em;
 }
+.main_category-item button:hover {
+    background: var(--clr-text-500);
+    color: var(--clr-text-400);
+}
 footer {
     position: relative;
 }
@@ -188,4 +194,8 @@ footer {
     justify-content: flex-start;
     align-items: center;
     gap: var(--padding-500);
+}
+.footer_card-address:nth-of-type(3) img {
+    border: 2px solid #222;
+    padding: 0 0 5px;
 }
